@@ -1,6 +1,6 @@
-=================================================================================
-This is a set of instructions to test if Episcina breaks on using the latest relx
-=================================================================================
+This is to test if Episcina breaks on using the latest relx.
+
+Steps:
 1.  Extract the contents from the tar file and first update the rel/sys.config file     with your postgres database details.
 2.  In the main dir relx_test enter the command gmake run
 3.  Enter pp_db:simple_query("select 1"). at the erlang prompt and see that it works.
@@ -12,9 +12,9 @@ This is a set of instructions to test if Episcina breaks on using the latest rel
 9.  Save and exit
 10. Repeat the steps in 2. An error similar to the one below should be seen
 
-=================================================================================
-sample error message
-=================================================================================
+
+
+Sample error message:
 1> pp_db:simple_query("select 1").
 ** exception error: timeout
 in function  gproc:await/2
