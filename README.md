@@ -1,7 +1,7 @@
 This is to test if Episcina breaks on using the latest relx.
 
 Steps:
-1.  Extract the contents from the tar file and first update the rel/sys.config file     with your postgres database details.
+1.  First update the rel/sys.config file with your postgres database details.
 2.  In the main dir relx_test enter the command gmake run
 3.  Enter pp_db:simple_query("select 1"). at the erlang prompt and see that it works.
 4.  Exit erlang
